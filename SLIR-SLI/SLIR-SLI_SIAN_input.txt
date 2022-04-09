@@ -1,0 +1,132 @@
+# stage one (host incidence)
+
+dSh/dt = mh * (Sh + Lh + Ih + Rh) - bv * Sh * Iv / (Sh + Lh + Ih + Rh) - mh * Sh,
+dLh/dt = bv * Sh * Iv / (Sh + Lh + Ih + Rh) - ah * Lh - mh * Lh ,
+dIh/dt = ah * Lh - gh * Ih - mh * Ih,
+dRh/dt = gh * Ih - mh * Rh,
+dSv/dt = mv * (Sv + Lv + Iv)- bh * Sv * Ih / (Sh + Lh + Ih + Rh) -  mv * Sv,
+dLv/dt = bh * Sv * Ih / (Sh + Lh + Ih + Rh) - av * Lv - mv * Lv,
+dIv/dt = av * Lv - mv * Iv, 
+y1 = ah * Lh; # host incidence,
+
+
+# stage one (host prevalence)
+
+dSh/dt = mh * (Sh + Lh + Ih + Rh) - bv * Sh * Iv / (Sh + Lh + Ih + Rh) - mh * Sh,
+dLh/dt = bv * Sh * Iv / (Sh + Lh + Ih + Rh) - ah * Lh - mh * Lh ,
+dIh/dt = ah * Lh - gh * Ih - mh * Ih,
+dRh/dt = gh * Ih - mh * Rh,
+dSv/dt = mv * (Sv + Lv + Iv)- bh * Sv * Ih / (Sh + Lh + Ih + Rh) -  mv * Sv,
+dLv/dt = bh * Sv * Ih / (Sh + Lh + Ih + Rh) - av * Lv - mv * Lv,
+dIv/dt = av * Lv - mv * Iv, 
+y1 = Ih / (Sh + Lh + Ih + Rh)  # host prevalence
+
+
+
+# stage two (host incidence, assume the natural history parameters)
+
+dSh/dt = mh * (Sh + Lh + Ih + Rh) - bv * Sh * Iv / (Sh + Lh + Ih + Rh) - mh * Sh,
+dLh/dt = bv * Sh * Iv / (Sh + Lh + Ih + Rh) - ah * Lh - mh * Lh ,
+dIh/dt = ah * Lh - gh * Ih - mh * Ih,
+dRh/dt = gh * Ih - mh * Rh,
+dSv/dt = mv * (Sv + Lv + Iv)- bh * Sv * Ih / (Sh + Lh + Ih + Rh) -  mv * Sv,
+dLv/dt = bh * Sv * Ih / (Sh + Lh + Ih + Rh) - av * Lv - mv * Lv,
+dIv/dt = av * Lv - mv * Iv, 
+dah/dt = 0,
+dgh/dt = 0,
+dav/dt = 0,
+y1 = ah * Lh; # host incidence,
+y2 = ah,
+y3 = gh,
+y4 = av,
+
+
+# stage two (host prevalence, natural history parameters)
+
+dSh/dt = mh * (Sh + Lh + Ih + Rh) - bv * Sh * Iv / (Sh + Lh + Ih + Rh) - mh * Sh,
+dLh/dt = bv * Sh * Iv / (Sh + Lh + Ih + Rh) - ah * Lh - mh * Lh,
+dIh/dt = ah * Lh - gh * Ih - mh * Ih,
+dRh/dt = gh * Ih - mh * Rh,
+dSv/dt = mv * (Sv + Lv + Iv)- bh * Sv * Ih / (Sh + Lh + Ih + Rh) -  mv * Sv,
+dLv/dt = bh * Sv * Ih / (Sh + Lh + Ih + Rh) - av * Lv - mv * Lv,
+dIv/dt = av * Lv - mv * Iv, 
+dah/dt = 0,
+dgh/dt = 0,
+dav/dt = 0,
+y1 = Ih / (Sh + Lh + Ih + Rh)  # host prevalence
+y2 = ah,
+y3 = gh,
+y4 = av,
+
+
+# stage three a. (host incidence, host prevalence)
+
+dSh/dt = mh * (Sh + Lh + Ih + Rh) - bv * Sh * Iv / (Sh + Lh + Ih + Rh) - mh * Sh,
+dLh/dt = bv * Sh * Iv / (Sh + Lh + Ih + Rh) - ah * Lh - mh * Lh ,
+dIh/dt = ah * Lh - gh * Ih - mh * Ih,
+dRh/dt = gh * Ih - mh * Rh,
+dSv/dt = mv * (Sv + Lv + Iv)- bh * Sv * Ih / (Sh + Lh + Ih + Rh) -  mv * Sv,
+dLv/dt = bh * Sv * Ih / (Sh + Lh + Ih + Rh) - av * Lv - mv * Lv,
+dIv/dt = av * Lv - mv * Iv, 
+y1 = ah * Lh,
+y2 = Ih / (Sh + Lh + Ih + Rh) 
+
+
+
+# stage three b. (host incidence, host prevalence, detected vector counts, vector incidence)
+
+dSh/dt = mh * (Sh + Lh + Ih + Rh) - bv * Sh * Iv / (Sh + Lh + Ih + Rh) - mh * Sh,
+dLh/dt = bv * Sh * Iv / (Sh + Lh + Ih + Rh) - ah * Lh - mh * Lh ,
+dIh/dt = ah * Lh - gh * Ih - mh * Ih,
+dRh/dt = gh * Ih - mh * Rh,
+dSv/dt = mv * (Sv + Lv + Iv)- bh * Sv * Ih / (Sh + Lh + Ih + Rh) -  mv * Sv,
+dLv/dt = bh * Sv * Ih / (Sh + Lh + Ih + Rh) - av * Lv - mv * Lv,
+dIv/dt = av * Lv - mv * Iv, 
+y1 = ah * Lh,
+y2 = Ih / (Sh + Lh + Ih + Rh), 
+y3 = lv * (Sv + Lv + Iv),
+y4 = av * Lv
+
+
+
+# stage four a. (host incidence, host prevalence, natural history parameters)
+
+dSh/dt = mh * (Sh + Lh + Ih + Rh) - bv * Sh * Iv / (Sh + Lh + Ih + Rh) - mh * Sh,
+dLh/dt = bv * Sh * Iv / (Sh + Lh + Ih + Rh) - ah * Lh - mh * Lh ,
+dIh/dt = ah * Lh - gh * Ih - mh * Ih,
+dRh/dt = gh * Ih - mh * Rh,
+dSv/dt = mv * (Sv + Lv + Iv)- bh * Sv * Ih / (Sh + Lh + Ih + Rh) -  mv * Sv,
+dLv/dt = bh * Sv * Ih / (Sh + Lh + Ih + Rh) - av * Lv - mv * Lv,
+dIv/dt = av * Lv - mv * Iv, 
+dah/dt = 0,
+dgh/dt = 0,
+dav/dt = 0,
+y1 = ah * Lh,
+y2 = Ih / (Sh + Lh + Ih + Rh), 
+y3 = ah,
+y4 = gh,
+y5 = av,
+
+
+
+# stage four b. (host incidence, host prevalence, detected vector counts, vector incidence, natural history parameters)
+
+dSh/dt = mh * (Sh + Lh + Ih + Rh) - bv * Sh * Iv / (Sh + Lh + Ih + Rh) - mh * Sh,
+dLh/dt = bv * Sh * Iv / (Sh + Lh + Ih + Rh) - ah * Lh - mh * Lh ,
+dIh/dt = ah * Lh - gh * Ih - mh * Ih,
+dRh/dt = gh * Ih - mh * Rh,
+dSv/dt = mv * (Sv + Lv + Iv)- bh * Sv * Ih / (Sh + Lh + Ih + Rh) -  mv * Sv,
+dLv/dt = bh * Sv * Ih / (Sh + Lh + Ih + Rh) - av * Lv - mv * Lv,
+dIv/dt = av * Lv - mv * Iv, 
+dah/dt = 0,
+dgh/dt = 0,
+dav/dt = 0,
+y1 = ah * Lh, 
+y2 = Ih / (Sh + Lh + Ih + Rh)   
+y3 = lv * (Sv + Lv + Iv)  
+y4 = av * Lv,
+y5 = ah,
+y6 = gh,
+y7 = av,
+
+

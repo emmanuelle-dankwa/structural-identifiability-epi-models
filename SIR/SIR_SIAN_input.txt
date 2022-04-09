@@ -1,0 +1,60 @@
+# stage one (incidence)
+
+dS/dt = -b * In * S/(S + In + R),
+dIn/dt = b * In * S/(S + In + R) - g * In,
+dR/dt = g * In,
+y1 = b * In * S/(S + In + R)  # incidence
+
+
+# stage one (prevalence)
+
+dS/dt = -b * In * S/(S + In + R),
+dIn/dt = b * In * S/(S + In + R) - g * In,
+dR/dt = g * In,
+y1 = In/(S + In + R)  # prevalence
+
+
+
+
+# stage two (incidence, assume the natural history parameter, g)
+
+
+dS/dt = -b * In * S/(S + In + R),
+dIn/dt = b * In * S/(S + In + R) - g * In,
+dR/dt = g * In,
+dg/dt = 0,
+y1 = b * In * S/(S + In + R), # incidence
+y2 = g  # Observe g
+
+
+
+# stage two (prevalence, natural history parameter)
+dS/dt = -b * In * S/(S + In + R),
+dIn/dt = b * In * S/(S + In + R) - g * In,
+dR/dt = g * In,
+dg/dt = 0,
+y1 = In/(S + In + R), # prevalence
+y2 = g  # observe g
+
+
+
+# stage three (incidence, prevalence)
+
+dS/dt = -b * In * S/(S + In + R),
+dIn/dt = b * In * S/(S + In + R) - g * In,
+dR/dt = g * In,
+y1 = b * In * S/(S + In + R), # incidence
+y2 = In/(S + In + R)  # prevalence
+
+
+
+# stage four (incidence, prevalence, natural history parameters)
+
+dS/dt = -b * In * S/(S + In + R),
+dIn/dt = b * In * S/(S + In + R) - g * In,
+dR/dt = g * In,
+dg/dt = 0,
+y1 = b * In * S/(S + In + R),  # incidence
+y2 = In/(S + In + R)  # prevalence
+y3 = g  # observe g
+

@@ -1,0 +1,17 @@
+=========================== Input system ===============================
+
+[diff(S(t),t) = -b*In(t)*S(t)/(S(t)+In(t)+R(t)), diff(In(t),t) = b*In(t)*S(t)/(S(t)+In(t)+R(t))-g(t)*In(t), diff(R(t),t) = g(t)*In(t), diff(g(t),t) = 0, y1(t) = In(t)/(S(t)+In(t)+R(t)), y2(t) = g(t)]
+
+
+=========================== SIAN Output ================================
+
+Globally identifiable parameters:                  [b, g(0)]
+Locally but not globally identifiable parameters:  []
+Not identifiable parameters:                       [In(0), R(0), S(0)]
+
+
+============ Single and/or Multi-Experiment Identifiability ============
+
+Multi experiment identifiable combinations:        [b]
+With bound:                                        1
+Single experiment identifiable combinations:       [b]

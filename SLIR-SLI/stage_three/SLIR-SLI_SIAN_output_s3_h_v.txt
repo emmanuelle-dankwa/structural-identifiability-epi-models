@@ -1,0 +1,17 @@
+=========================== Input system ===============================
+
+[diff(Sh(t),t) = mh*(Sh(t)+Lh(t)+Ih(t)+Rh(t))-bv*Sh(t)*Iv(t)/(Sh(t)+Lh(t)+Ih(t)+Rh(t))-mh*Sh(t), diff(Lh(t),t) = bv*Sh(t)*Iv(t)/(Sh(t)+Lh(t)+Ih(t)+Rh(t))-ah*Lh(t)-mh*Lh(t), diff(Ih(t),t) = -gh*Ih(t)-mh*Ih(t)+ah*Lh(t), diff(Rh(t),t) = gh*Ih(t)-mh*Rh(t), diff(Sv(t),t) = mv*(Sv(t)+Lv(t)+Iv(t))-bh*Sv(t)*Ih(t)/(Sh(t)+Lh(t)+Ih(t)+Rh(t))-mv*Sv(t), diff(Lv(t),t) = bh*Sv(t)*Ih(t)/(Sh(t)+Lh(t)+Ih(t)+Rh(t))-av*Lv(t)-mv*Lv(t), diff(Iv(t),t) = -mv*Iv(t)+av*Lv(t), y1(t) = ah*Lh(t), y2(t) = Ih(t)/(Sh(t)+Lh(t)+Ih(t)+Rh(t)), y3(t) = lv*(Sv(t)+Lv(t)+Iv(t)), y4(t) = av*Lv(t)]
+
+
+=========================== SIAN Output ================================
+
+Globally identifiable parameters:                  [ah, av, bh, bv, gh, lv, mh, mv, Sh(0), Lh(0), Ih(0), Rh(0), Sv(0), Lv(0), Iv(0)]
+Locally but not globally identifiable parameters:  []
+Not identifiable parameters:                       []
+
+
+============ Single and/or Multi-Experiment Identifiability ============
+
+Multi experiment identifiable combinations:        [ah, av, bh, bv, gh, lv, mh, mv]
+With bound:                                        1
+Single experiment identifiable combinations:       [ah, av, bh, bv, gh, lv, mh, mv]

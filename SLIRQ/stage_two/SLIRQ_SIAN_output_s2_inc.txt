@@ -1,0 +1,17 @@
+=========================== Input system ===============================
+
+[diff(S(t),t) = -b*In(t)*S(t)/(S(t)+L(t)+In(t)+R(t)+Q(t))-u(t)*S(t)/(S(t)+L(t)+In(t)+R(t)+Q(t)), diff(L(t),t) = b*In(t)*S(t)/(S(t)+L(t)+In(t)+R(t)+Q(t))-a(t)*L(t), diff(In(t),t) = -g(t)*In(t)+a(t)*L(t)+s(t)*Q(t), diff(R(t),t) = u(t)*S(t)/(S(t)+L(t)+In(t)+R(t)+Q(t))+e(t)*g(t)*In(t), diff(Q(t),t) = (1-e(t))*g(t)*In(t)-s(t)*Q(t), diff(g(t),t) = 0, diff(a(t),t) = 0, diff(e(t),t) = 0, diff(s(t),t) = 0, y1(t) = a(t)*L(t)+s(t)*Q(t), y2(t) = g(t), y3(t) = a(t), y4(t) = e(t), y5(t) = s(t)]
+
+
+=========================== SIAN Output ================================
+
+Globally identifiable parameters:                  [b, S(0), L(0), In(0), R(0), Q(0), g(0), a(0), e(0), s(0)]
+Locally but not globally identifiable parameters:  []
+Not identifiable parameters:                       []
+
+
+============ Single and/or Multi-Experiment Identifiability ============
+
+Multi experiment identifiable combinations:        [b]
+With bound:                                        1
+Single experiment identifiable combinations:       [b]

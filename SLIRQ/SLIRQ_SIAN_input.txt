@@ -1,0 +1,86 @@
+# stage one (incidence)
+
+dS/dt = -b * In * S/ (S + L + In + R + Q) - u(t) * S / (S + L + In + R + Q),
+dL/dt = b * In * S/ (S + L + In + R + Q) - a * L,
+dIn/dt = a * L - g * In + s * Q,
+dR/dt = u(t) * S / (S + L + In + R + Q) + e * g * In,
+dQ/dt = (1 - e) * g * In - s * Q,
+y1 = a * L + s * Q   # incidence
+
+
+# stage one (prevalence)
+
+dS/dt = -b * In * S/ (S + L + In + R + Q) - u(t) * S / (S + L + In + R + Q),
+dL/dt = b * In * S/ (S + L + In + R + Q) - a * L,
+dIn/dt = a * L - g * In + s * Q,
+dR/dt = u(t) * S / (S + L + In + R + Q) + e * g * In,
+dQ/dt = (1 - e) * g * In - s * Q,
+y1 = In / (S + L + In + R + Q)  # prevalence
+
+
+
+
+# stage two (incidence, assume the natural history parameters, a and g)
+
+dS/dt = -b * In * S/ (S + L + In + R + Q) - u(t) * S / (S + L + In + R + Q),
+dL/dt = b * In * S/ (S + L + In + R + Q) - a * L,
+dIn/dt = a * L - g * In + s * Q,
+dR/dt = u(t) * S / (S + L + In + R + Q) + e * g * In,
+dQ/dt = (1 - e) * g * In - s * Q,
+dg/dt = 0,
+da/dt = 0,
+de/dt = 0,
+ds/dt = 0,
+y1 = a * L + s * Q, 
+y2 = g,
+y3 = a,
+y4 = e,
+y5 = s
+
+
+# stage two (prevalence, natural history parameters)
+
+dS/dt = -b * In * S/ (S + L + In + R + Q) - u(t) * S / (S + L + In + R + Q),
+dL/dt = b * In * S/ (S + L + In + R + Q) - a * L,
+dIn/dt = a * L - g * In + s * Q,
+dR/dt = u(t) * S / (S + L + In + R + Q) + e * g * In,
+dQ/dt = (1 - e) * g * In - s * Q,
+dg/dt = 0,
+da/dt = 0,
+de/dt = 0,
+ds/dt = 0,
+y1 = In / (S + L + In + R + Q), 
+y2 = g,
+y3 = a,
+y4 = e,
+y5 = s
+
+
+# stage three (incidence, prevalence)
+
+dS/dt = -b * In * S/ (S + L + In + R + Q) - u(t) * S / (S + L + In + R + Q),
+dL/dt = b * In * S/ (S + L + In + R + Q) - a * L,
+dIn/dt = a * L - g * In + s * Q,
+dR/dt = u(t) * S / (S + L + In + R + Q) + e * g * In,
+dQ/dt = (1 - e) * g * In - s * Q,
+y1 = a * L + s * Q, 
+y2 = In / (S + In + R + Q) 
+
+# stage four (incidence, prevalence, natural history parameters)
+
+dS/dt = -b * In * S/ (S + L + In + R + Q) - u(t) * S / (S + L + In + R + Q),
+dL/dt = b * In * S/ (S + L + In + R + Q) - a * L,
+dIn/dt = a * L - g * In + s * Q,
+dR/dt = u(t) * S / (S + L + In + R + Q) + e * g * In,
+dQ/dt = (1 - e) * g * In - s * Q,
+dg/dt = 0,
+da/dt = 0,
+de/dt = 0,
+ds/dt = 0,
+y1 = a * L + s * Q, 
+y2 = In / (S + L + In + R + Q), 
+y3 = g,  
+y4 = a,
+y5 = e,
+y6 = s
+

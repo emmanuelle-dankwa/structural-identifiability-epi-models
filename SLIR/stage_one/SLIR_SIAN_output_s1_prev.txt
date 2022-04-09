@@ -1,0 +1,10 @@
+=========================== Input system ===============================
+
+[diff(S(t),t) = -b*In(t)*S(t)/(S(t)+L(t)+In(t)+R(t)), diff(L(t),t) = b*In(t)*S(t)/(S(t)+L(t)+In(t)+R(t))-a*L(t), diff(In(t),t) = -g*In(t)+a*L(t), diff(R(t),t) = g*In(t), y1(t) = In(t)/(S(t)+L(t)+In(t)+R(t))]
+
+
+=========================== SIAN Output ================================
+
+Globally identifiable parameters:                  [b]
+Locally but not globally identifiable parameters:  [a, g]
+Not identifiable parameters:                       [In(0), L(0), R(0), S(0)]
