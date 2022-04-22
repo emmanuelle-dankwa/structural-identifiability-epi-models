@@ -1,6 +1,6 @@
 # stage one (incidence)
 
-dS/dt = -b * In * S/(S + L + In + R) - u(t) * S/ ,
+dS/dt = -b * In * S/(S + L + In + R),
 dL/dt = b * In * S/(S + L + In + R) - a * L,
 dIn/dt = a * L - g * In,
 dR/dt = g * In,
