@@ -55,6 +55,6 @@ dIn/dt = b * In * S/(S + In + R) - g * In,
 dR/dt = g * In,
 dg/dt = 0,
 y1 = b * In * S/(S + In + R),  # incidence
-y2 = In/(S + In + R)  # prevalence
+y2 = In/(S + In + R),  # prevalence
 y3 = g  # observe g
 
