@@ -2,7 +2,7 @@
 
 The input code in this repository reproduces the results in the manuscript:
 
-Emmanuelle A. Dankwa, Andrew F. Brouwer, Christl A. Donnelly. Structural identifiability of compartmental models for infectious disease transmission is influenced by data type.
+Emmanuelle A. Dankwa, Andrew F. Brouwer, Christl A. Donnelly. Structural identifiability of compartmental models for infectious disease transmission is influenced by data type. [https://arxiv.org/abs/2206.03959](arXiv:2206.03959).
 
 In this work, we performed structural identifiability analysis of 26 compartmental models for infectious disease transmission uising the SIAN web application [(Hong et al., 2019)](#1): [https://maple.cloud/app/6509768948056064](https://maple.cloud/app/6509768948056064). The algorithm on which SIAN is based is explained by [Hong et al. (2020)](#2). 
 
